@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Ideia2001</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="content-header">
+            <figure>
+                <img src="./imgs/logo.png" alt="Logo Ideia2001"/>
+            </figure>
+    
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#eventos">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="#usuarios">Usuários</a>
+                    </li>
+                    <li>
+                        <a href="#relatorios">Relatórios</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="user-settings">
+                <figure class="user-picture">
+                    <img src="./imgs/user.png" alt="Icone usuário"/>
+                </figure>
+                <div class="user-text">
+                    <p class="user-name">Igor Gonçalves</p>
+                    <p class="loginout"><a href="#logout">Desconectar</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER MOBILE -->
+    <header id="main-header-mobile">
+        <div class="content-header-mobile">
+            <button class="menu-open-button" onclick="openButton()">
+                <figure>
+                    <img src="./imgs/menu.png" alt="Botão de menu"/>
+                </figure>
+            </button>
+
+            <figure>
+                <img src="./imgs/logo.png" alt="Logo Ideia2001"/>
+            </figure>
+    
+            <nav class="nav-mobile">
+                <button class="menu-open-button" onclick="closeButton()">
+                    <figure>
+                        <img src="./imgs/close.png" alt="Botão de menu"/>
+                    </figure>
+                </button>
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#eventos">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="#usuarios">Usuários</a>
+                    </li>
+                    <li>
+                        <a href="#relatorios">Relatórios</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="user-settings-mobile">
+                <figure class="user-picture">
+                    <img src="./imgs/user.png" alt="Icone usuário"/>
+                </figure>
+                <!-- <div class="user-text">
+                    <p class="user-name">Igor Gonçalves</p>
+                    <p class="loginout"><a href="#logout">Desconectar</a></p>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <main class="page-background">
+        <section id="main-content">
+            <p class="mb-1">Olá <strong>Igor Gonçalves,</strong> selecione uma das opções abaixo:</p>
+
+            <div class="dashboard">
+                <button class="dashboard-button button-1" onclick="buttonSelect('1')">
+                    <figure>
+                        <img src="./imgs/icone-eventos.png" alt="Meus eventos"/>
+                    </figure>
+                    <p>Meus Eventos</p>
+                </button>
+                <button class="dashboard-button button-2" onclick="buttonSelect('2')">
+                    <figure>
+                        <img src="./imgs/icone-usuarios.png" alt="Usuários"/>
+                    </figure>
+                    <p>Usuários</p>
+                </button>
+                <button class="dashboard-button button-3" onclick="buttonSelect('3')">
+                    <figure>
+                        <img src="./imgs/icone-relatorios.png" alt="Relatórios"/>
+                    </figure>
+                    <p>Relatórios</p>
+                </button>
+            </div>
+        </section>
+
+        <footer id="main-footer">
+            <p><a href="#ideia2001">Ideia 2001</a> © Copyright 2019 - Todos os direitos reservados</p>
+        </footer>
+    </main>
+
+
+</body>
+	<script src="js/script.js" type="text/javascript"></script>
+
+</html>
